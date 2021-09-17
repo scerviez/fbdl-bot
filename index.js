@@ -1,14 +1,14 @@
 const { Telegraf } = require('telegraf')
 
-const bot = new Telegraf("1937670863:AAF-BK41Z2svcQm6QygjA8gErRaLtzh_4gU")
+const bot = new Telegraf(process.env.token)
 const fbdl = require("fb-video-downloader")
 
 bot.command('start', (ctx) => {
-    ctx.reply('Yo Welcome. im bot to download video from Facebook. Send Link To Start Download');
+    ctx.reply(process.env.text);
 });
 bot.on('message',  (ctx) => {
     if (ctx.chat.type == 'private') {
-        ctx.reply('...');
+        ctx.reply('Downloading..');
         var pesan = ctx.message.text;
         //let input = ctx.message.text
         // let inputArray = input.split(" ")
