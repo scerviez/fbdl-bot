@@ -4,6 +4,6 @@
 </p>
 
 <p align="center">
-- x -|│  “	Facebook Downloader Bot. ”  │| - x -
+         **Facebook Downloader Bot.**
 </p>
 
