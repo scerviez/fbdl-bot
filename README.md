@@ -4,6 +4,18 @@
 </p>
 
 <i align="center">
-         Facebook Downloader Bot.
+         Facebook Downloader Bot. Telegram Bot To Download Facebook Media.
 </i>
+
+# Setup
+
+# Local
+```
+```
+
+# Railway
+
+
+After the fork, don't forget to give it a star!
+
 
