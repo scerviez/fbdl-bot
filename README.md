@@ -25,7 +25,7 @@ $ node index
 ```
 
 # Railway
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Frailwayapp%2Fexamples%2Ftree%2Fmaster%2Fexamples%2Fflask)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https%3A%2F%2Fgithub.com%2Fnekozu%2Ffbdl-bot&envs=token%2Ctext%2Ctext_group&optionalEnvs=token%2Ctext&tokenDesc=Bot+token&textDesc=Start+Text+On+Private&text_groupDesc=start+text+for+group)
 
 After the fork, don't forget to give it a star!
 
