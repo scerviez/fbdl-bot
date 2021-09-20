@@ -1,14 +1,14 @@
 const { Bot, InlineKeyboard } = require('grammy')
 
-const bot = new Bot('1937670863:AAF-BK41Z2svcQm6QygjA8gErRaLtzh_4gU')
+const bot = new Bot(process.env.token)
 
 const fbdl = require("fb-video-downloader")
 
 bot.command('start', (ctx) => {
     if (ctx.chat.type == 'private') {
-        ctx.reply('Yo Welcome. im bot to download media from facebook. send me link then bot send link to download')
+        ctx.reply(process.env.text)
     }else{
-          ctx.reply('Hello '+ctx.from.first_name+' This bot only can used at Private Chat ðŸ™‚')
+          ctx.reply(process.env.text_group)
   }
 })
 
