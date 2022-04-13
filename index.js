@@ -2,7 +2,7 @@ const { Bot, InlineKeyboard } = require('grammy')
 
 const bot = new Bot(process.env.token)
 
-const fbdl = require("fb-video-downloader")
+const fbdl = require("fb-downloader")
 
 bot.command('start', (ctx) => {
     if (ctx.chat.type == 'private') {
@@ -20,9 +20,9 @@ bot.on('message',  (ctx) => {
           // let inputArray = input.split(" ")
          // inputArray.shift()
          // pesan = inputArray.join(" ")
-         fbdl.getInfo(pesan).then(res => {
-         const hd = res.download.hd
-         const sd = res.download.sd
+         fbdl(pesan).then(res => {
+         const hd = res.hd
+         const sd = res.sd
          const keyboard = new InlineKeyboard().url('SD', sd)
           return ctx.reply(`Title: ${res.title}\n[HD Quality](${hd})`, {
             reply_markup: keyboard, parse_mode: 'markdown'
